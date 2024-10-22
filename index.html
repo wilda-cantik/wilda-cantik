@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday, Wilda Oktafani!</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        background-color: #ffe6e6;
+        color: #333;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        padding: 50px;
+        margin-top: 100px;
+      }
+
+      h1 {
+        font-size: 3em;
+        color: #ff6699;
+      }
+
+      p {
+        font-size: 1.2em;
+        margin-bottom: 20px;
+      }
+
+      button {
+        background-color: #ff6699;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        font-size: 1.2em;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+
+      button:hover {
+        background-color: #ff3366;
+      }
+
+      #surprise {
+        margin-top: 50px;
+        opacity: 0;
+        transform: scale(0.9);
+        transition: opacity 0.8s ease, transform 0.8s ease;
+      }
+
+      #surprise.show {
+        opacity: 1;
+        transform: scale(1);
+      }
+
+      .surprise-img {
+        width: 50%;
+        border-radius: 10px;
+        margin-top: 20px;
+      }
+
+      .message {
+        font-size: 1.5em;
+        color: #ff6699;
+        margin: 20px 0;
+      }
+
+      /* Styling untuk tampilan mobile */
+      @media only screen and (max-width: 600px) {
+        .container {
+          padding: 20px;
+          margin-top: 50px;
+        }
+
+        h1 {
+          font-size: 2em;
+        }
+
+        p {
+          font-size: 1em;
+        }
+
+        button {
+          padding: 10px 15px;
+          font-size: 1em;
+        }
+
+        .surprise-img {
+          width: 80%;
+        }
+
+        .message {
+          font-size: 1.2em;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Happy Birthday, Wilda Oktafani!</h1>
+      <p>
+        Selamat ulang tahun, Wilda! Semoga hari ini penuh dengan kebahagiaan dan
+        cinta 💖
+      </p>
+      <p>Kamu selalu istimewa dan aku bersyukur bisa ada di sisimu.</p>
+      <button onclick="showSurprise()">Klik untuk kejutan!</button>
+    </div>
+
+    <div id="surprise" class="hidden">
+      <h2>Kejutan buat kamu, Wilda!</h2>
+      <p>Jangan pernah ragu dengan dirimu sendiri, kamu cantik luar dalam 💕</p>
+      <div class="message">Jangan insecure, kamu cantik banget!</div>
+      <div class="message">Aku selalu ada buat kamu.</div>
+      <div class="message">Semangat terus yaa, apa pun yang kamu jalani.</div>
+      <div class="message">
+        Makasih udah bikin hariku lebih indah setiap harinya 💖
+      </div>
+      <img src="/wilda-cantik.jpg" alt="Foto Berdua" class="surprise-img" />
+    </div>
+
+    <script>
+      function showSurprise() {
+        const surprise = document.getElementById("surprise");
+        surprise.classList.toggle("show");
+      }
+    </script>
+  </body>
+</html>
